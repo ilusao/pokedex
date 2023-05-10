@@ -1,0 +1,64 @@
+<div class="container text-center">
+  <div class="display-6"
+  [textContent]="pokedex.name">
+
+  </div>
+  <div class="row m-2">
+    <div class="col">
+      <img [src]="pokedex.image"
+      width="200px"
+      class="mask">
+
+    </div>
+  </div>
+
+  <div class="row m-5">
+    <div class="col">
+      <table class="table table-hover table-dark container text-center" style="width:30%">
+        <tbody>
+           <tr>
+             <th class="bg-primary">Número</th>
+             <th class="bg-info" [textContent]="pokedex.number"></th>
+
+           </tr>
+           <tr>
+             <th class="bg-primary">Altura</th>
+             <td class="bg-info" [textContent]="pokedex.weight"></td>
+           </tr>
+           <tr>
+             <th class="bg-primary">Peso</th>
+             <td class="bg-info" [textContent]="pokedex.height"></td>
+           </tr>
+         </tbody>
+       </table>
+
+    </div>
+</div>
+
+   <div class="row m-2">
+      <div class="col">
+       <img [src]="pokedex.video"
+       width="150px"
+       class="mask">
+       <table class="table table-hover table-dark container text-center" style="width:30%">
+        <tbody>
+           <tr>
+             <th class="bg-primary">tipo</th>
+             <th class="bg-info" [textContent]="pokedex.text"></th>
+       </table>
+
+
+      </div>
+    </div>
+
+    <div class="row m-2">
+      <div class="col">
+
+        <button class="carousel-control-prev" (click)="previousPokemon()" style="color: black;">voltar</button>
+        <button class="carousel-control-next" (click)="nextPokemon()" style="color: black;">Próximo</button>
+
+
+      </div>
+  </div>
+</div>
+
